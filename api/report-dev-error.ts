@@ -2,6 +2,7 @@ import { NowRequest, NowResponse } from "@vercel/node";
 import { ApiRequestBody } from "../types/RequestType";
 import { SlackWebhookPayload } from "../types/SlackType";
 import { allowCors } from "../util/cors";
+import axios from "axios";
 
 const devError = async (req: NowRequest, res: NowResponse) => {
   if (req.method !== "POST") {
@@ -21,7 +22,10 @@ const devError = async (req: NowRequest, res: NowResponse) => {
     method: "POST",
     body: JSON.stringify(objectForSlack),
   });
-  res.status(204).send("");
+  axios
+    .post(process.env.SLACK_WEBHOOK_URL_DEV, objectForSlack)
+    .then(() => res.status(204).send(""))
+    .catch(() => res.status(500).send("slack api error"));
 };
 
 const _isValidVercelRequest = (body: any): body is ApiRequestBody => {
