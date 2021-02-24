@@ -1,0 +1,23 @@
+{
+  "name": "datacat",
+  "version": "1.0.0",
+  "description": "free error reporter",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sadnessOjisan/datacat.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sadnessOjisan/datacat/issues"
+  },
+  "homepage": "https://github.com/sadnessOjisan/datacat#readme",
+  "devDependencies": {
+    "@vercel/node": "^1.9.0",
+    "typescript": "^4.2.2"
+  }
+}
