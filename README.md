@@ -2,8 +2,15 @@
 
 free error reporter
 
+## Build
+
+nothing. Vercel builds all.
+
 ## API Spec
 
-| Endpoint | Method | Request      |
-| -------- | ------ | ------------ |
-| /echo-id | Get    | ?id={string} |
+Host is depends on your deploy.
+My example's host is https://datacat.vercel.app
+
+| Endpoint     | Method | Request      |
+| ------------ | ------ | ------------ |
+| /api/echo-id | Get    | ?id={string} |
