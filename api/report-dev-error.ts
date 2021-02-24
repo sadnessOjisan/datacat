@@ -18,10 +18,6 @@ const devError = async (req: NowRequest, res: NowResponse) => {
     text: body.message,
   };
 
-  await fetch(`${process.env.SLACK_WEBHOOK_URL_DEV}`, {
-    method: "POST",
-    body: JSON.stringify(objectForSlack),
-  });
   axios
     .post(process.env.SLACK_WEBHOOK_URL_DEV, objectForSlack)
     .then(() => res.status(204).send(""))
