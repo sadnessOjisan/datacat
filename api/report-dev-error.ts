@@ -1,8 +1,9 @@
 import { NowRequest, NowResponse } from "@vercel/node";
 import { ApiRequestBody } from "../types/RequestType";
 import { SlackWebhookPayload } from "../types/SlackType";
+import { allowCors } from "../util/cors";
 
-export default async (req: NowRequest, res: NowResponse) => {
+const devError = async (req: NowRequest, res: NowResponse) => {
   if (req.method !== "POST") {
     res.status(403).json({ error: `${req.method} is invalid request method` });
   }
@@ -30,3 +31,5 @@ const _isValidVercelRequest = (body: any): body is ApiRequestBody => {
   }
   return true;
 };
+
+export default allowCors(devError);
