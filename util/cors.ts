@@ -2,9 +2,7 @@ import { NowRequest, NowResponse } from "@vercel/node";
 
 export const allowCors = (fn) => async (req: NowRequest, res: NowResponse) => {
   res.setHeader("Access-Control-Allow-Credentials", "true");
-  res.setHeader("Access-Control-Allow-Origin", "*");
-  // another common pattern
-  // res.setHeader('Access-Control-Allow-Origin', req.headers.origin);
+  res.setHeader("Access-Control-Allow-Origin", process.env.HOST ?? "*"); // FIXME: not *, should be strict.
   res.setHeader(
     "Access-Control-Allow-Methods",
     "GET,OPTIONS,PATCH,DELETE,POST,PUT"
