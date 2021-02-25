@@ -51,7 +51,7 @@ My example's host is https://datacat.vercel.app
 | --------------------- | ------ | ----------------- |
 | /api/report-dev-error | POST   | {message: string} |
 | /api/report-prd-error | POST   | {message: string} |
-| /api/test             | POST   | {message: string} |
+| /api/test             | GET    |                   |
 
 ### Enviroment Variables
 
