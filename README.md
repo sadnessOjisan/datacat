@@ -40,6 +40,8 @@ You don't need config to build. Because Vercel can build TypeScript and construc
 
 7. you will get notify in your channel
 
+![message](./docs/image/message.png)
+
 ## Spec
 
 ### Endpoint
@@ -51,7 +53,7 @@ My example's host is https://datacat.vercel.app
 | --------------------- | ------ | ----------------- |
 | /api/report-dev-error | POST   | {message: string} |
 | /api/report-prd-error | POST   | {message: string} |
-| /api/test             | GET    |                   |
+| /api/test-endpoint    | GET    |                   |
 
 ### Enviroment Variables
 
