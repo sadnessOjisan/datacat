@@ -1,6 +1,6 @@
-# datacat
-
 <img src="./logo.png" alt="logo" height="240" align="right" />
+
+# datacat
 
 Error reporting tool for **free**.
 
