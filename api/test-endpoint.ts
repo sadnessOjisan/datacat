@@ -4,7 +4,7 @@ import axios from "axios";
 
 const test = async (req: NowRequest, res: NowResponse) => {
   axios
-    .post("http://datacat.vercel.app//api/report-dev-error", {
+    .post("http://datacat-demo.vercel.app//api/report-dev-error", {
       message: "Hello from vercel!!",
     })
     .then(() => res.status(204).send(""))
