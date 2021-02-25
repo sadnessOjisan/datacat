@@ -1,8 +1,8 @@
 # datacat
 
-Error reporting tool for **free**.
+<img src="./logo.png" alt="logo" height="240" align="right" />
 
-![logo](./logo.png)
+Error reporting tool for **free**.
 
 ## How to use
 
