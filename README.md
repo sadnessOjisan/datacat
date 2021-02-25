@@ -4,6 +4,15 @@
 
 Error reporting tool for **free**.
 
+This provides you error reporting endpoint.
+
+Just you do is prepare your slack webhook URL.
+
+## why free
+
+Can deploy vercel. This is powerd by vercel serverless functions.
+Of cource, you can deploy ohter infrastrcuture.
+
 ## How to use
 
 1. create slack channel for error loggin
