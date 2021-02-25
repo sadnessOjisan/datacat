@@ -8,6 +8,8 @@ This provides you error reporting endpoint.
 
 Just you do is prepare your slack webhook URL.
 
+(In Japanese, Vercel 経由で Slack に通知を送れるやつ)
+
 ## why free
 
 Can deploy vercel. This is powerd by vercel serverless functions.
