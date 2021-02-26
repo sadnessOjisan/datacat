@@ -2,7 +2,7 @@
 
 # datacat
 
-For FREE, Error notification tool. This provides you error reporting endpoint. Your need just your slack webhook URL and Cloud infrastructure. I recommend Vercel.
+For FREE, Error notification tool. This provides you error reporting endpoint. You need just your slack webhook URL and Cloud infrastructure. I recommend Vercel.
 
 (In Japanese, Vercel 経由で Slack に通知を送れるやつ)
 
