@@ -2,45 +2,40 @@
 
 # datacat
 
-Error reporting tool for **free**.
-
-This provides you error reporting endpoint.
-
-Just you do is prepare your slack webhook URL.
+For FREE, Error notification tool. This provides you error reporting endpoint. Your need just your slack webhook URL and Cloud infrastructure. I recommend Vercel.
 
 (In Japanese, Vercel 経由で Slack に通知を送れるやつ)
 
-## why free
+## Why free
 
-Can deploy vercel. This is powerd by vercel serverless functions.
-Of cource, you can deploy ohter infrastrcuture.
+This app can deploy to Vercel. Of cource, you can deploy ohter infrastrcuture.
 
 ## How to use
 
-1. create slack channel for error loggin
+1. Create slack channel for error loggin.
 
 ![chanel](./docs/image/chanel.png)
 
-2. get webhook url to notify the channel
+2. Get webhook url to notify the channel.
 
-add incoming webhook app extension.
+Add incoming webhook app extension.
 
 https://${your_slack_name}.slack.com/apps
 
 ![hook](./docs/image/hook.png)
 
-connect your channel
+Connect your channel
 
 ![create](./docs/image/create.png)
 
 3. fork this repository
-4. conect forked repository to Vercel
+4. Conect forked repository to Vercel
 
 ![vercel](./docs/image/vercel.png)
 
-5. set enviroment variables
+5. Configure Vercel
 
-this enviroment variables are your slack incoming hook url.
+Set your slack incoming hook url as Enviroment Varialbes.
 datacat send it log.
 
 ![env](./docs/image/env.png)
