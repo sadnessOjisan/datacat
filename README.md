@@ -8,7 +8,7 @@ For FREE, Error notification tool. This provides you error reporting endpoint. Y
 
 ## Why free
 
-This app can deploy to Vercel. Of cource, you can deploy ohter infrastrcuture.
+This app can deploy to Vercel which is free. Of cource, you can deploy ohter infrastrcuture.
 
 ## How to use
 
